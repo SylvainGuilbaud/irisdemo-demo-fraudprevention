@@ -8,4 +8,4 @@ Actions :
 * [build the cube](http://localhost:9094/csp/app/_DeepSee.UI.Architect.zen?$NAMESPACE=APP&CUBE=transactions.cube) - Build the cube transactions
 * [Run Dashboard](http://localhost:9094/csp/app/_DeepSee.UserPortal.DashboardViewer.zen?DASHBOARD=fraudPrevention/today.dashboard&EMBED=1) - Showing today transactions
 * [import in Postman](https://github.com/SylvainGuilbaud/irisdemo-demo-fraudprevention/blob/master/normalized_datalake/postman/Fraud%20Prevention.postman_collection.json) - the "Fraud Prevention.postman_collection.json" file
-* [POST to White List using Postman](http://localhost:9092/csp/appint/rest/whitelist/) - with "FromAccountNumber":"C1822295676" and modifying the date in order to add the customer in the white list during the current period.
+* [POST to White List using Postman](http://localhost:9092/csp/appint/rest/whitelist/) - with "FromAccountNumber":"C1822295676" and modifying the From/To dates in order to add the customer in the white list during the current period.
