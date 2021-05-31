@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "644ea3bb-95bf-432a-b63c-c65c680bb1d1",
+		"name": "Fraud Prevention",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ajout liste blanche",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FromAccountNumber\":\"\",\n    \"FromDate\":\"2021-05-25\",\n    \"ToDate\":\"2021-05-28\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9092/csp/appint/rest/whitelist/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"csp",
+						"appint",
+						"rest",
+						"whitelist",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ajout liste blanche C1822295676",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"FromAccountNumber\":\"C1822295676\",\n    \"FromDate\":\"2021-05-25\",\n    \"ToDate\":\"2021-05-28\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9092/csp/appint/rest/whitelist/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9092",
+					"path": [
+						"csp",
+						"appint",
+						"rest",
+						"whitelist",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "sys",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "_system",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+    "objectscript.conn": {
+    "active": true,
+    // "server": "fraudprevention",
+    // "ns": "appint",
+    "server": "fraudprevention-datalake",
+        "ns": "APP"
+        "docker-compose": {
+            "service": "datalake",
+            "internalPort": 52773
+      },
+    },
+    "sqltools.connections": [
+        {
+            "namespace": "APPINT",
+            "connectionMethod": "Server and Port",
+            "showSystem": false,
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 9092,
+            "askForPassword": false,
+            "driver": "InterSystems IRIS",
+            "name": "FRAUD PREVENTION",
+            "username": "_system",
+            "password": "sys"
+        },
+        {
+            "namespace": "APP",
+            "connectionMethod": "Server and Port",
+            "showSystem": false,
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 9094,
+            "askForPassword": false,
+            "driver": "InterSystems IRIS",
+            "name": "FRAUD DATALAKE",
+            "username": "_system",
+            "password": "sys"
+        }
+    ]
+}
