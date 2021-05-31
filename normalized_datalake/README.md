@@ -1,7 +1,7 @@
 # Actions to execute for the datalake demo
 
 Actions :
-* [Connect VS Code into fraudprevention-datalake ](https://github.com/SylvainGuilbaud/irisdemo-demo-fraudprevention/tree/master/.vscode) - connect VS Code to the fraudprevention-datalake container
+* [Connect VS Code into fraudprevention-datalake ](https://github.com/SylvainGuilbaud/irisdemo-demo-fraudprevention/blob/master/.vscode/settings.json) - connect VS Code to the fraudprevention-datalake container
 * [import & compile package](https://github.com/SylvainGuilbaud/irisdemo-demo-fraudprevention/tree/master/normalized_datalake/src/cls/cubes) - the cube package. 
 * [import & compile class](https://github.com/SylvainGuilbaud/irisdemo-demo-fraudprevention/blob/master/normalized_datalake/src/cls/IRISDemo/CheckingTrans.cls) - IRISDemo.CheckingTrans.cls
 * [imports the pivots and dashboard definitions](http://localhost:9094/csp/app/_DeepSee.UI.FolderManager.cls?$ERROR=1&$NAMESPACE=APP) -  Import the normalized_datalake/analytics/2pivots_2dashboards.xml file
